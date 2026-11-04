@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menukaart | Bieren & Meer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1a120b;
+            --card-bg: #261b12;
+            --accent-gold: #d4af37;
+            --text-cream: #f4eee1;
+            --text-muted: #b8aaa0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-cream);
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--accent-gold);
+            background: linear-gradient(to bottom, #110b07, var(--bg-color));
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+        }
+        .item-name {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text-cream);
+            padding-right: 15px;
+        }
+        .item-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 3px 0 0 0;
+            font-style: italic;
+        }
+        .item-price {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .item-info {
+            flex-grow: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>ONZE BIERTKAART</h1>
+        <p class="subtitle">Ontdek ons exclusieve assortiment</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Pils en Weißbier op fles -->
+        <section>
+            <h2>Pils & Weißbier op fles</h2>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Jupiler 25cl</span></div>
+                <div class="item-price">€ 2,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Carlsberg</span></div>
+                <div class="item-price">€ 2,40</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Blauw - Export</span></div>
+                <div class="item-price">€ 2,20</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">13 craft pilsner</span></div>
+                <div class="item-price">€ 2,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Corona Extra</span></div>
+                <div class="item-price">€ 4,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Desperados</span></div>
+                <div class="item-price">€ 4,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Hefe-Weißbier Paulaner</span></div>
+                <div class="item-price">€ 4,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Weihenstephaner</span></div>
+                <div class="item-price">€ 4,00</div>
+            </div>
+        </section>
+
+        <!-- Speciaalbieren -->
+        <section>
+            <h2>Speciaalbieren</h2>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Jambe De Bois</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Judas</span></div>
+                <div class="item-price">€ 4,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Kasteel Blond</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Kasteel Donker</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Kasteel Rouge</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Keyte Dobbel tripel</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <span class="item-name">Kwak (Pauwels)</span>
+                    <p class="item-desc">Een bier dat wordt geschonken in een uniek glas: een koetsierke. Geen zorgen, hier hoef je jouw schoen niet af te geven.</p>
+                </div>
+                <div class="item-price">€ 3,90</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Omer</span></div>
+                <div class="item-price">€ 3,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Cornet</span></div>
+                <div class="item-price">€ 3,50</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Duvel</span></div>
+                <div class="item-price">€ 3,80</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Tripel Karmeliet</span></div>
+                <div class="item-price">€ 3,60</div>
+            </div>
+        </section>
+
+        <!-- Alcoholvrij -->
+        <section>
+            <h2>Alcoholvrij Bier</h2>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Jupiler 0,0%</span></div>
+                <div class="item-price">€ 2,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Carlsberg 0,0%</span></div>
+                <div class="item-price">€ 2,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Leffe blond 0,0%</span></div>
+                <div class="item-price">€ 3,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Leffe bruin 0,0%</span></div>
+                <div class="item-price">€ 3,00</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><span class="item-name">Brugse Sportzot</span></div>
+                <div class="item-price">€ 3,40</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <span class="item-name">Energibajer Mikkeller</span>
+                    <p class="item-desc">Deens alcoholvrij bier gebrouwen in de Belgische brouwerij "De Proefbrouwerij". Geurend naar perziken, abrikozen en kruiden.</p>
+                </div>
+                <div class="item-price">€ 4,20</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Digitaal Menukaart Systeem - Aangedreven door Café Digital</p>
+    </footer>
+
+</body>
+</html>
